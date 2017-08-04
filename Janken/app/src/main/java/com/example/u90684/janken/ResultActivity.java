@@ -65,13 +65,13 @@ public class ResultActivity extends AppCompatActivity {
         TextView resultLabel = (TextView) findViewById(R.id.result_label);
         int gameResult = (comHand - myHand +3)%3;
         switch (gameResult){
-            case 0:
+            case 0: //あいこの場合
                 resultLabel.setText(R.string.result_draw);
                 break;
-            case 1:
+            case 1: //プレイヤーの勝ちの場合
                 resultLabel.setText(R.string.result_win);
                 break;
-            case 2:
+            case 2: //プレイヤーの負けの場合
                 resultLabel.setText(R.string.result_lose);
                 break;
         }
